@@ -1,3 +1,4 @@
+using EFCoreDemo.Shared;
 using Microsoft.EntityFrameworkCore;
 
 namespace EFCoreDemo.StudentModule;
@@ -49,10 +50,14 @@ public class StudentService
     {
         var student = await _context.Students.FirstOrDefaultAsync((s) => s.Id == id);
         if (student is null) return null;
-        
+
         _context.Students.Remove(student);
         await _context.SaveChangesAsync();
         return student;
+    }
 
+    public async Task<List<Student>> GetByName(string name)
+    {
+       return await _context.Students.Where(s => s.Name == name).ToListAsync();
     }
 }
