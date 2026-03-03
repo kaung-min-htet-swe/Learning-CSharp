@@ -1,0 +1,47 @@
+using EFCoreDemo;
+using EFCoreDemo.Migrations;
+using Microsoft.EntityFrameworkCore;
+
+Console.WriteLine("EF Core Demo");
+
+var optionsBuilder = new DbContextOptionsBuilder<CompanyContext>();
+optionsBuilder.UseSqlServer(
+    "Server=localhost;User ID=sa;Password=DataC0Ntr0ll3r;Encrypt=True;Database=efcore;TrustServerCertificate=True;"
+);
+
+var companyContext = new CompanyContext(optionsBuilder.Options);
+var employeeService = new EmployeeService();
+
+// var employee = await employeeService.Create(companyContext);
+// Console.WriteLine($"employee.Name: {employee.Name}, employee.Department: {employee.Department}");
+
+var employess = await employeeService.Read(companyContext);
+foreach (var e in employess)
+{
+    Ulits.PrintEmployee(e);
+}
+
+var updatedEmployee = await employeeService.Update(companyContext, 1);
+if (updatedEmployee is not null)
+{
+    Ulits.PrintEmployee(updatedEmployee);
+}
+
+var deletedEmployee = await employeeService.Delete(companyContext, 1);
+if (deletedEmployee is not null)
+{
+    Ulits.PrintEmployee(deletedEmployee);
+}
+
+
+
+// public class CompanyContextFactory : IDesignTimeDbContextFactory<CompanyContext>
+// {
+//     public CompanyContext CreateDbContext(string[] args)
+//     {
+//         var optionsBuilder = new DbContextOptionsBuilder<CompanyContext>();
+//         optionsBuilder.UseSqlServer(
+//             "Server=localhost;User ID=sa;Password=DataC0Ntr0ll3r;Encrypt=True;Database=efcore;TrustServerCertificate=True;");
+//         return new CompanyContext(optionsBuilder.Options);
+//     }
+// }

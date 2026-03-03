@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore", "DotNetCore\DotNetCore.csproj", "{68150BDC-4158-4355-BC25-29CD91532607}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQPractice", "LINQPractice\LINQPractice.csproj", "{3D1EE572-A3B1-4C7C-968A-E298A67589CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreDemo", "EFCoreDemo\EFCoreDemo.csproj", "{76B06AAE-A843-4DEE-A18B-3FBFC59B97AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68150BDC-4158-4355-BC25-29CD91532607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68150BDC-4158-4355-BC25-29CD91532607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68150BDC-4158-4355-BC25-29CD91532607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68150BDC-4158-4355-BC25-29CD91532607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D1EE572-A3B1-4C7C-968A-E298A67589CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D1EE572-A3B1-4C7C-968A-E298A67589CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D1EE572-A3B1-4C7C-968A-E298A67589CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D1EE572-A3B1-4C7C-968A-E298A67589CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76B06AAE-A843-4DEE-A18B-3FBFC59B97AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76B06AAE-A843-4DEE-A18B-3FBFC59B97AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76B06AAE-A843-4DEE-A18B-3FBFC59B97AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76B06AAE-A843-4DEE-A18B-3FBFC59B97AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
