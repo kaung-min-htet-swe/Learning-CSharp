@@ -10,45 +10,23 @@ public class StudentModule
     {
         try
         {
-            var service = new StudentService(ctx);
-            // var newStudent = new Student()
-            // {
-            //     Age = 20,
-            //     Name = "Kaung Min Htet",
-            // };
-        
-            // var createdStudent = await service.Create(newStudent);
-            // Ulits.PrintStudent(createdStudent);
-            //     
-            // Ulits.PrintStudent((await service.GetById(1))!);
-            //
-            // var updatedStudent = await service.Update(new Student()
-            // {
-            //     Id = 1,
-            //     Name = "Kaung Kaung",
-            // });
-            // if (updatedStudent != null) Ulits.PrintStudent(updatedStudent);
-            //
-            // var deletedStudent = await service.Delete(1);
-            // if (deletedStudent != null) Ulits.PrintStudent(deletedStudent);
-            
-            var students = await service.GetAll();
-            foreach (var s in students)
-            {
-                Console.WriteLine("Student list");
-                Ulits.PrintStudent(s);
-            }
+            var addressService = new AddressService(ctx);
+            var studentService = new StudentService(ctx, addressService);
 
-            var kaungminhtet = await service.GetByName("Kaung Min Htet");
-            foreach (var s in kaungminhtet)
+            var home1 = new Address()
             {
-                Console.WriteLine("Student list");
-                Ulits.PrintStudent(s);
-            }
+                AddreLine = "Address Line 1",
+                State = "State 1",
+                Township = "Township 1",
+            };
+
+            var student = await studentService.UpdateAddress(3, home1);
+            Ulits.PrintStudent(student!);
         }
         catch (Exception e)
         {
-            Console.WriteLine(e.Message);
+            Console.Write("In exception.");
+            Console.WriteLine(e.StackTrace);
         }
     }
 }

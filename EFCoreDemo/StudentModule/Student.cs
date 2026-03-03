@@ -9,4 +9,6 @@ public class Student
     public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
     public string Name { get; set; } = string.Empty;
     public int Age { get; set; }
+
+    public Address Address { get; set; } = null!;
 }

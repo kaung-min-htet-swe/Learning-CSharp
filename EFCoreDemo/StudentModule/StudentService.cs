@@ -3,43 +3,40 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EFCoreDemo.StudentModule;
 
-public class StudentService
+public class StudentService(CompanyContext context, AddressService addressService)
 {
-    private readonly CompanyContext _context;
-
-    public StudentService(CompanyContext context)
-    {
-        _context = context;
-    }
+    private readonly AddressService _addressService = addressService;
 
     public async Task<Student> Create(Student student)
     {
-        _context.Students.Add(student);
-        await _context.SaveChangesAsync();
+        context.Students.Add(student);
+        await context.SaveChangesAsync();
 
         return student;
     }
 
     public async Task<Student?> GetById(int id)
     {
-        return await _context.Students.FirstOrDefaultAsync((s) => s.Id == id);
+        return await context.Students
+            .Include(s => s.Address)
+            .FirstOrDefaultAsync((s) => s.Id == id);
     }
 
     public async Task<List<Student>> GetAll()
     {
-        return await _context.Students.ToListAsync();
+        return await context.Students.ToListAsync();
     }
 
     public async Task<Student?> Update(Student student)
     {
-        var oldStudent = await _context.Students.FirstOrDefaultAsync((s) => s.Id == student.Id);
+        var oldStudent = await context.Students.FirstOrDefaultAsync((s) => s.Id == student.Id);
         if (oldStudent is not null)
         {
             oldStudent.Name = student.Name != "" ? student.Name : oldStudent.Name;
             oldStudent.Age = student.Age != 0 ? student.Age : oldStudent.Age;
             oldStudent.UpdatedAt = DateTime.UtcNow;
 
-            await _context.SaveChangesAsync();
+            await context.SaveChangesAsync();
             return oldStudent;
         }
 
@@ -48,16 +45,34 @@ public class StudentService
 
     public async Task<Student?> Delete(int id)
     {
-        var student = await _context.Students.FirstOrDefaultAsync((s) => s.Id == id);
+        var student = await context.Students.FirstOrDefaultAsync((s) => s.Id == id);
         if (student is null) return null;
 
-        _context.Students.Remove(student);
-        await _context.SaveChangesAsync();
+        context.Students.Remove(student);
+        await context.SaveChangesAsync();
         return student;
     }
 
     public async Task<List<Student>> GetByName(string name)
     {
-       return await _context.Students.Where(s => s.Name == name).ToListAsync();
+        return await context.Students.Where(s => s.Name == name).ToListAsync();
+    }
+
+    public async Task<Student?> UpdateAddress(int studentId, Address address)
+    {
+        var student = await context.Students
+            .Include(student => student.Address)
+            .FirstOrDefaultAsync((s) => s.Id == studentId);
+
+        if (student.Address is not null)
+        {
+            await addressService.Delete(student.Address.Id);
+        }
+
+        student.Address = address;
+        await context.SaveChangesAsync();
+        return student ?? null;
+
+        return student ?? null;
     }
 }
