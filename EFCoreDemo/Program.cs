@@ -1,5 +1,6 @@
 using EFCoreDemo;
 using EFCoreDemo.Migrations;
+using EFCoreDemo.Shared;
 using EFCoreDemo.StudentModule;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
@@ -8,6 +9,10 @@ Console.WriteLine("EF Core Demo");
 
 var contextFactory = new CompanyContextFactory();
 var db = contextFactory.CreateDbContext();
+// var addressService = new AddressService(db);
+// var address = await AddressTestDemo.UpdateAddressTest(addressService);
+// Ulits.PrintAddress(address);
+
 await StudentModule.Run(db);
 
 // var employee = new EmployeeService();

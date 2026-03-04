@@ -4,7 +4,7 @@ using Microsoft.VisualBasic.CompilerServices;
 
 namespace EFCoreDemo.StudentModule;
 
-public class StudentModule
+public static class StudentModule
 {
     public static async Task Run(CompanyContext ctx)
     {
@@ -15,9 +15,9 @@ public class StudentModule
 
             var home1 = new Address()
             {
-                AddreLine = "Address Line 1",
-                State = "State 1",
-                Township = "Township 1",
+                AddreLine = "Address Line 2",
+                State = "State 2",
+                Township = "Township 2",
             };
 
             var student = await studentService.UpdateAddress(3, home1);

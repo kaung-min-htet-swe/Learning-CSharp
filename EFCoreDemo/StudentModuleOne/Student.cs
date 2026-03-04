@@ -1,3 +1,4 @@
+using EFCoreDemo.DepartmentModule;
 using EFCoreDemo.Shared;
 
 namespace EFCoreDemo.StudentModule;
@@ -11,4 +12,7 @@ public class Student
     public int Age { get; set; }
 
     public Address Address { get; set; } = null!;
+
+    public int? DepartmentId { get; set; }
+    public Department? Department { get; set; } = null!;
 }

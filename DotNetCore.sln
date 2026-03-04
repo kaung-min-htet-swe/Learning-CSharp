@@ -4,7 +4,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCore", "DotNetCore\Do
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQPractice", "LINQPractice\LINQPractice.csproj", "{3D1EE572-A3B1-4C7C-968A-E298A67589CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreDemo", "EFCoreDemo\EFCoreDemo.csproj", "{76B06AAE-A843-4DEE-A18B-3FBFC59B97AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCore", "EFCore\EFCore.csproj", "{EA66481F-2135-49C2-A893-528810592BE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,9 +20,9 @@ Global
 		{3D1EE572-A3B1-4C7C-968A-E298A67589CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D1EE572-A3B1-4C7C-968A-E298A67589CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D1EE572-A3B1-4C7C-968A-E298A67589CD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{76B06AAE-A843-4DEE-A18B-3FBFC59B97AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{76B06AAE-A843-4DEE-A18B-3FBFC59B97AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{76B06AAE-A843-4DEE-A18B-3FBFC59B97AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{76B06AAE-A843-4DEE-A18B-3FBFC59B97AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA66481F-2135-49C2-A893-528810592BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA66481F-2135-49C2-A893-528810592BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA66481F-2135-49C2-A893-528810592BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA66481F-2135-49C2-A893-528810592BE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

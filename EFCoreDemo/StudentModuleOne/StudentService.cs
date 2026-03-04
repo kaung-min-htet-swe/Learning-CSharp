@@ -66,7 +66,10 @@ public class StudentService(CompanyContext context, AddressService addressServic
 
         if (student.Address is not null)
         {
-            await addressService.Delete(student.Address.Id);
+            student.Address.AddreLine = address.AddreLine;
+            student.Address.State = address.State;
+            await _addressService.Update(student.Address);
+            return student;
         }
 
         student.Address = address;

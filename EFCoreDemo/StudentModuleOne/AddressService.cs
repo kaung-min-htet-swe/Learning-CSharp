@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace EFCoreDemo.StudentModule;
+namespace EFCoreDemo.StudentModuleOne;
 
 public class AddressService(CompanyContext db)
 {
