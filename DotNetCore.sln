@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetDatabase", "DotNetDat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC", "MVC\MVC.csproj", "{2C21F4DF-93F6-4627-B537-3248BED78C2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcAjax", "MvcAjax\MvcAjax.csproj", "{D7251095-6D29-4E91-8D94-254FF702E1C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,5 +74,9 @@ Global
 		{2C21F4DF-93F6-4627-B537-3248BED78C2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C21F4DF-93F6-4627-B537-3248BED78C2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C21F4DF-93F6-4627-B537-3248BED78C2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7251095-6D29-4E91-8D94-254FF702E1C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7251095-6D29-4E91-8D94-254FF702E1C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7251095-6D29-4E91-8D94-254FF702E1C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7251095-6D29-4E91-8D94-254FF702E1C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
