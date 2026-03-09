@@ -1,0 +1,39 @@
+@model ThemeDatabase.TblStudent
+
+@{
+    ViewData["Title"] = "Edit Student";
+}
+
+<div class="card card-warning">
+    <div class="card-header"><h3 class="card-title">Edit Student</h3></div>
+    <form asp-action="Edit">
+        <div class="card-body">
+            <input type="hidden" asp-for="StudentId"/>
+            <input type="hidden" asp-for="DeleteFlag"/>
+            <div class="form-group"><label asp-for="StudentNo"></label><input asp-for="StudentNo" class="form-control"/><span
+                    asp-validation-for="StudentNo" class="text-danger"></span></div>
+            <div class="form-group"><label asp-for="StudentName"></label><input asp-for="StudentName"
+                                                                                class="form-control"/><span
+                    asp-validation-for="StudentName" class="text-danger"></span></div>
+            <div class="form-group"><label asp-for="FatherName"></label><input asp-for="FatherName"
+                                                                               class="form-control"/><span
+                    asp-validation-for="FatherName" class="text-danger"></span></div>
+            <div class="form-group"><label asp-for="DateOfBirth"></label><input asp-for="DateOfBirth"
+                                                                                class="form-control" type="date"
+                                                                                value="@Model.DateOfBirth.ToString("yyyy-MM-dd")"/><span
+                    asp-validation-for="DateOfBirth" class="text-danger"></span></div>
+            <div class="form-group"><label asp-for="Gender"></label><input asp-for="Gender" class="form-control"/><span
+                    asp-validation-for="Gender" class="text-danger"></span></div>
+            <div class="form-group"><label asp-for="Address"></label><input asp-for="Address"
+                                                                            class="form-control"/><span
+                    asp-validation-for="Address" class="text-danger"></span></div>
+            <div class="form-group"><label asp-for="MobileNo"></label><input asp-for="MobileNo"
+                                                                             class="form-control"/><span
+                    asp-validation-for="MobileNo" class="text-danger"></span></div>
+        </div>
+        <div class="card-footer">
+            <button type="submit" class="btn btn-warning">Save Changes</button>
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,42 @@
+@model IEnumerable<ThemeDatabase.TblStudent>
+
+@{
+    ViewData["Title"] = "Student List";
+}
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Create New</a>
+</p>
+<div class="card">
+    <div class="card-body">
+        <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <th>No.</th>
+                <th>Student No</th>
+                <th>Student Name</th>
+                <th>Father Name</th>
+                <th>Date of Birth</th>
+                <th>Gender</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var (item, index) in Model.Select((value, i) => (value, i))) {
+                <tr>
+                    <td>@(index + 1)</td>
+                    <td>@Html.DisplayFor(modelItem => item.StudentNo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.StudentName)</td>
+                    <td>@Html.DisplayFor(modelItem => item.FatherName)</td>
+                    <td>@item.DateOfBirth.ToString("dd-MM-yyyy")</td>
+                    <td>@Html.DisplayFor(modelItem => item.Gender)</td>
+                    <td>
+                        <a asp-action="Edit" asp-route-id="@item.StudentId" class="btn btn-warning btn-sm">Edit</a>
+                        <a asp-action="Delete" asp-route-id="@item.StudentId" class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    </div>
+</div>
