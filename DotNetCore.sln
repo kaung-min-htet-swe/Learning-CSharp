@@ -14,6 +14,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADOWeb", "ADOWeb\ADOWeb.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperWeb", "DapperWeb\DapperWeb.csproj", "{CE647C51-8EA3-41D9-8A65-F67B0868BC45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFWeb", "EFWeb\EFWeb.csproj", "{00C63B2D-4D2D-4802-987D-6DC7C6328A27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DapperDb", "DapperDb\DapperDb.csproj", "{89A397D5-F34F-4237-BEDF-76402EDC9F95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +52,13 @@ Global
 		{CE647C51-8EA3-41D9-8A65-F67B0868BC45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE647C51-8EA3-41D9-8A65-F67B0868BC45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE647C51-8EA3-41D9-8A65-F67B0868BC45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00C63B2D-4D2D-4802-987D-6DC7C6328A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00C63B2D-4D2D-4802-987D-6DC7C6328A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00C63B2D-4D2D-4802-987D-6DC7C6328A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00C63B2D-4D2D-4802-987D-6DC7C6328A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89A397D5-F34F-4237-BEDF-76402EDC9F95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89A397D5-F34F-4237-BEDF-76402EDC9F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89A397D5-F34F-4237-BEDF-76402EDC9F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89A397D5-F34F-4237-BEDF-76402EDC9F95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
