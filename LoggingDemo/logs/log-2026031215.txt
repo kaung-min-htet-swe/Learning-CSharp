@@ -1,0 +1,104 @@
+2026-03-12 15:10:53.109 +06:30 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2026-03-12 15:10:53.191 +06:30 [INF] Application starting up
+2026-03-12 15:10:53.327 +06:30 [INF] Now listening on: http://localhost:5282
+2026-03-12 15:10:53.340 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-12 15:10:53.341 +06:30 [INF] Hosting environment: Development
+2026-03-12 15:10:53.342 +06:30 [INF] Content root path: /home/kgkg/Practices/DotNetCore/LoggingDemo
+2026-03-12 15:10:54.012 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/swagger - null null
+2026-03-12 15:10:54.093 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/swagger - 301 0 null 84.96ms
+2026-03-12 15:10:54.112 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/swagger/index.html - null null
+2026-03-12 15:10:54.458 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/swagger/index.html - 200 null text/html;charset=utf-8 347.3667ms
+2026-03-12 15:10:54.481 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/swagger/swagger-ui-standalone-preset.js - null null
+2026-03-12 15:10:54.482 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/swagger/swagger-ui-bundle.js - null null
+2026-03-12 15:10:54.482 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/swagger/swagger-ui.css - null null
+2026-03-12 15:10:54.582 +06:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-03-12 15:10:54.582 +06:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-03-12 15:10:54.582 +06:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-03-12 15:10:54.592 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 111.4877ms
+2026-03-12 15:10:54.596 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/swagger/swagger-ui.css - 200 152034 text/css 114.5377ms
+2026-03-12 15:10:54.593 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 110.9725ms
+2026-03-12 15:10:54.954 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/swagger/v1/swagger.json - null null
+2026-03-12 15:10:54.969 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/swagger/favicon-32x32.png - null null
+2026-03-12 15:10:54.971 +06:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-03-12 15:10:54.974 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/swagger/favicon-32x32.png - 200 628 image/png 4.8103ms
+2026-03-12 15:10:55.038 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 84.1479ms
+2026-03-12 15:12:00.675 +06:30 [INF] Application is shutting down...
+2026-03-12 15:16:05.865 +06:30 [INF] Application starting up
+2026-03-12 15:16:06.088 +06:30 [INF] Now listening on: http://localhost:5282
+2026-03-12 15:16:06.099 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-12 15:16:06.100 +06:30 [INF] Hosting environment: Development
+2026-03-12 15:16:06.101 +06:30 [INF] Content root path: /home/kgkg/Practices/DotNetCore/LoggingDemo
+2026-03-12 15:16:06.657 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/swagger/index.html - null null
+2026-03-12 15:16:07.024 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/swagger/index.html - 200 null text/html;charset=utf-8 369.2325ms
+2026-03-12 15:16:07.561 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/swagger/v1/swagger.json - null null
+2026-03-12 15:16:07.847 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 289.5551ms
+2026-03-12 15:16:36.807 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/api/products - null null
+2026-03-12 15:16:36.824 +06:30 [WRN] Failed to determine the https port for redirect.
+2026-03-12 15:16:36.833 +06:30 [INF] Executing endpoint 'LoggingDemo.ProductsController.GetProducts (LoggingDemo)'
+2026-03-12 15:16:36.886 +06:30 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProducts() on controller LoggingDemo.ProductsController (LoggingDemo).
+2026-03-12 15:16:36.920 +06:30 [INF] Executed action LoggingDemo.ProductsController.GetProducts (LoggingDemo) in 22.953ms
+2026-03-12 15:16:36.922 +06:30 [INF] Executed endpoint 'LoggingDemo.ProductsController.GetProducts (LoggingDemo)'
+2026-03-12 15:16:36.924 +06:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'LoggingDemo.ProductsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method3(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-03-12 15:16:36.960 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/api/products - 500 null text/plain; charset=utf-8 152.6692ms
+2026-03-12 15:19:03.039 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/api/products - null null
+2026-03-12 15:19:03.041 +06:30 [INF] Executing endpoint 'LoggingDemo.ProductsController.GetProducts (LoggingDemo)'
+2026-03-12 15:19:03.045 +06:30 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProducts() on controller LoggingDemo.ProductsController (LoggingDemo).
+2026-03-12 15:19:03.046 +06:30 [INF] Executed action LoggingDemo.ProductsController.GetProducts (LoggingDemo) in 0.332ms
+2026-03-12 15:19:03.047 +06:30 [INF] Executed endpoint 'LoggingDemo.ProductsController.GetProducts (LoggingDemo)'
+2026-03-12 15:19:03.048 +06:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'LoggingDemo.ProductsController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method5(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-03-12 15:19:03.052 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/api/products - 500 null text/plain; charset=utf-8 12.8498ms
+2026-03-12 15:19:10.433 +06:30 [INF] Application is shutting down...
+2026-03-12 15:22:05.479 +06:30 [INF] Application starting up
+2026-03-12 15:22:05.845 +06:30 [INF] Now listening on: http://localhost:5282
+2026-03-12 15:22:05.863 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-12 15:22:05.865 +06:30 [INF] Hosting environment: Development
+2026-03-12 15:22:05.865 +06:30 [INF] Content root path: /home/kgkg/Practices/DotNetCore/LoggingDemo
+2026-03-12 15:22:06.766 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/swagger/index.html - null null
+2026-03-12 15:22:07.245 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/swagger/index.html - 200 null text/html;charset=utf-8 483.5889ms
+2026-03-12 15:22:07.467 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/swagger/v1/swagger.json - null null
+2026-03-12 15:22:07.703 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 237.5969ms
+2026-03-12 15:22:09.465 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/api/products - null null
+2026-03-12 15:22:09.484 +06:30 [WRN] Failed to determine the https port for redirect.
+2026-03-12 15:22:09.492 +06:30 [INF] Executing endpoint 'LoggingDemo.ProductsController.GetProducts (LoggingDemo)'
+2026-03-12 15:22:09.575 +06:30 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProducts() on controller LoggingDemo.ProductsController (LoggingDemo).
+2026-03-12 15:22:09.592 +06:30 [INF] Executing action method LoggingDemo.ProductsController.GetProducts (LoggingDemo) - Validation state: "Valid"
+2026-03-12 15:22:09.596 +06:30 [INF] GetProducts methods called
+2026-03-12 15:22:09.599 +06:30 [INF] Retrieved 3 products
+2026-03-12 15:22:09.616 +06:30 [INF] Executed action method LoggingDemo.ProductsController.GetProducts (LoggingDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 9.7759ms.
+2026-03-12 15:22:09.642 +06:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-03-12 15:22:09.762 +06:30 [INF] Executed action LoggingDemo.ProductsController.GetProducts (LoggingDemo) in 180.4555ms
+2026-03-12 15:22:09.763 +06:30 [INF] Executed endpoint 'LoggingDemo.ProductsController.GetProducts (LoggingDemo)'
+2026-03-12 15:22:09.763 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/api/products - 200 null application/json; charset=utf-8 298.6425ms
+2026-03-12 15:22:18.762 +06:30 [INF] Application is shutting down...

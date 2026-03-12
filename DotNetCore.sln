@@ -40,6 +40,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWindMVC", "NorthWindMV
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RealtimeNotification", "RealtimeNotification\RealtimeNotification.csproj", "{2CB3054C-2A31-45C4-91D7-5657A78F0EF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoggingDemo", "LoggingDemo\LoggingDemo.csproj", "{99FE26C1-1758-49F8-9E7E-1DC5E82959D8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -118,6 +120,10 @@ Global
 		{2CB3054C-2A31-45C4-91D7-5657A78F0EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CB3054C-2A31-45C4-91D7-5657A78F0EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CB3054C-2A31-45C4-91D7-5657A78F0EF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99FE26C1-1758-49F8-9E7E-1DC5E82959D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99FE26C1-1758-49F8-9E7E-1DC5E82959D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99FE26C1-1758-49F8-9E7E-1DC5E82959D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99FE26C1-1758-49F8-9E7E-1DC5E82959D8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C2C530A9-6A95-444E-B0DA-9F2AF08CFA39} = {DAFB3266-B8EB-4948-8100-4477978D3004}
