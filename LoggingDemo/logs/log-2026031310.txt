@@ -1,0 +1,10 @@
+2026-03-13 10:01:54.822 +06:30 [INF] Application starting up
+2026-03-13 10:01:55.321 +06:30 [INF] Now listening on: http://localhost:5282
+2026-03-13 10:01:55.355 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-13 10:01:55.358 +06:30 [INF] Hosting environment: Development
+2026-03-13 10:01:55.359 +06:30 [INF] Content root path: /home/kgkg/Practices/DotNetCore/LoggingDemo
+2026-03-13 10:01:56.345 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/swagger/index.html - null null
+2026-03-13 10:01:57.036 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/swagger/index.html - 200 null text/html;charset=utf-8 695.9438ms
+2026-03-13 10:01:57.458 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/swagger/v1/swagger.json - null null
+2026-03-13 10:01:57.817 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 360.2258ms
+2026-03-13 10:02:11.031 +06:30 [INF] Application is shutting down...

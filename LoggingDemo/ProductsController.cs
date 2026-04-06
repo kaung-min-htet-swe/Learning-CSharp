@@ -4,9 +4,13 @@ using ILogger = Serilog.ILogger;
 
 namespace LoggingDemo;
 
+public record CreateRequestDto(String Name);
+
+public record CreateResponseDto(Guid Id, String Name);
+
 [ApiController]
 [Route("api/products")]
-public class ProductsController(ILogger<ProductsController> logger):ControllerBase
+public class ProductsController(ILogger<ProductsController> logger) : ControllerBase
 {
     [HttpGet]
     public IActionResult GetProducts()
@@ -18,21 +22,22 @@ public class ProductsController(ILogger<ProductsController> logger):ControllerBa
 
         return Ok(products);
     }
-    
-    [HttpPost]
-    public IActionResult CreateProduct([FromBody] string productName)
-    {
-        logger.LogInformation("Creating product: {ProductName}", productName);
 
-        if (string.IsNullOrEmpty(productName))
+    [HttpPost]
+    public IActionResult CreateProduct([FromBody] CreateRequestDto product)
+    {
+        logger.LogInformation("Creating product: {ProductName}", product.Name);
+
+        if (string.IsNullOrEmpty(product.Name))
         {
             Log.Warning("Empty product name provided");
             return BadRequest("Product name cannot be empty");
         }
 
-        logger.LogInformation("Product created successfully: {ProductName}", productName);
+        var newProduct = new CreateResponseDto(Guid.NewGuid(), product.Name);
+        logger.LogInformation("Product created successfully: {ProductName}", newProduct.Name);
 
-        return Ok($"Product {productName} created");
+        return Ok(newProduct);
     }
 
     [HttpGet("{id}")]

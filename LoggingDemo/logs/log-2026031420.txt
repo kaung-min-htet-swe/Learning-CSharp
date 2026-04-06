@@ -1,0 +1,22 @@
+2026-03-14 20:18:18.995 +06:30 [INF] Application starting up
+2026-03-14 20:18:19.425 +06:30 [INF] Now listening on: http://localhost:5282
+2026-03-14 20:18:19.450 +06:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-03-14 20:18:19.454 +06:30 [INF] Hosting environment: Development
+2026-03-14 20:18:19.454 +06:30 [INF] Content root path: /home/kgkg/Practices/DotNetCore/LoggingDemo
+2026-03-14 20:18:20.341 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/swagger/index.html - null null
+2026-03-14 20:18:20.833 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/swagger/index.html - 200 null text/html;charset=utf-8 495.5049ms
+2026-03-14 20:18:21.326 +06:30 [INF] Request starting HTTP/1.1 GET http://localhost:5282/swagger/v1/swagger.json - null null
+2026-03-14 20:18:21.592 +06:30 [INF] Request finished HTTP/1.1 GET http://localhost:5282/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 268.2963ms
+2026-03-14 20:18:38.913 +06:30 [INF] Request starting HTTP/1.1 POST http://localhost:5282/api/products - application/json 21
+2026-03-14 20:18:38.930 +06:30 [WRN] Failed to determine the https port for redirect.
+2026-03-14 20:18:38.943 +06:30 [INF] Executing endpoint 'LoggingDemo.ProductsController.CreateProduct (LoggingDemo)'
+2026-03-14 20:18:39.017 +06:30 [INF] Route matched with {action = "CreateProduct", controller = "Products"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateProduct(LoggingDemo.CreateRequestDto) on controller LoggingDemo.ProductsController (LoggingDemo).
+2026-03-14 20:18:39.267 +06:30 [INF] Executing action method LoggingDemo.ProductsController.CreateProduct (LoggingDemo) - Validation state: "Valid"
+2026-03-14 20:18:39.272 +06:30 [INF] Creating product: Apple
+2026-03-14 20:18:39.273 +06:30 [INF] Product created successfully: Apple
+2026-03-14 20:18:39.284 +06:30 [INF] Executed action method LoggingDemo.ProductsController.CreateProduct (LoggingDemo), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 3.5111ms.
+2026-03-14 20:18:39.305 +06:30 [INF] Executing OkObjectResult, writing value of type 'LoggingDemo.CreateResponseDto'.
+2026-03-14 20:18:39.361 +06:30 [INF] Executed action LoggingDemo.ProductsController.CreateProduct (LoggingDemo) in 334.519ms
+2026-03-14 20:18:39.363 +06:30 [INF] Executed endpoint 'LoggingDemo.ProductsController.CreateProduct (LoggingDemo)'
+2026-03-14 20:18:39.364 +06:30 [INF] Request finished HTTP/1.1 POST http://localhost:5282/api/products - 200 null application/json; charset=utf-8 451.2598ms
+2026-03-14 20:24:56.932 +06:30 [INF] Application is shutting down...

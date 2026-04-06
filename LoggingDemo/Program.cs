@@ -13,10 +13,10 @@ Log.Logger = new LoggerConfiguration()
         rollingInterval: RollingInterval.Hour,
         fileSizeLimitBytes: 10485760, // 10MB
         retainedFileCountLimit: 24)
-    .WriteTo.MSSqlServer(
-        connectionString: builder.Configuration.GetConnectionString("DbConnection"),
-        tableName: "Logs",
-        autoCreateSqlTable: true)
+    // .WriteTo.MSSqlServer(
+    //     connectionString: builder.Configuration.GetConnectionString("DbConnection"),
+    //     tableName: "Logs",
+    //     autoCreateSqlTable: true)
     .CreateLogger();
 
 builder.Host.UseSerilog();
